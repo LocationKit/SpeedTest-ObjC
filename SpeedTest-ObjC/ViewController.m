@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[LocationKit sharedInstance] startWithApiToken:@"your_api_token" andDelegate:self];
+    [[LocationKit sharedInstance] startWithApiToken:@"your_api_token_here" delegate:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,9 +28,23 @@
 }
 
 - (void)locationKit:(LocationKit *)locationKit didUpdateLocation:(CLLocation *)location {
-    NSLog(@"The user has moved and their location is now (%.6f, %.6f)",
-          location.coordinate.latitude,
-          location.coordinate.longitude);
+    if (location.speed > 0) {
+        double speed = location.speed * 2.236936;
+        self.speedDisplay.text = [NSString stringWithFormat:@"%.2f MPH", speed];
+    }
+}
+
+- (void)locationKit:(LocationKit *)locationKit willChangeActivityMode:(LKActivityMode)mode {
+    // LocationKit has engaged driving mode, we want to crank up the GPS to medium from its default (low)
+    LKSetting* setting;
+    if (mode == 5) {
+        NSLog(@"Detected user likely driving, changing operation mode to high");
+        setting = [[LKSetting alloc] initWithType:LKSettingTypeHigh];
+    } else {
+        NSLog(@"Detected user likely not driving, changing operation mode to auto");
+        setting = [[LKSetting alloc] initWithType:LKSettingTypeAuto];
+    }
+    [[LocationKit sharedInstance] applyOperationMode:(setting)];
 }
 
 @end

@@ -2,7 +2,7 @@
 # platform :ios, '6.0'
 
 target 'SpeedTest-ObjC' do
-  pod 'LocationKit', '~> 2.1.0'
+  pod 'LocationKit', '~> 2.2.0'
 end
 
 target 'SpeedTest-ObjCTests' do
