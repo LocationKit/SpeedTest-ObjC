@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <LocationKit/LocationKit.h>
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *speedDisplay;
 
 @end
 
@@ -16,12 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [[LocationKit sharedInstance] startWithApiToken:@"your_api_token" andDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)locationKit:(LocationKit *)locationKit didUpdateLocation:(CLLocation *)location {
+    NSLog(@"The user has moved and their location is now (%.6f, %.6f)",
+          location.coordinate.latitude,
+          location.coordinate.longitude);
 }
 
 @end
