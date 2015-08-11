@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F521C0483E6AD15B443A062 /* libPods-SpeedTest-ObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C08046C13843C66263F55E /* libPods-SpeedTest-ObjC.a */; };
 		841386FC1B7A303600A7E19F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 841386FB1B7A303600A7E19F /* main.m */; };
 		841386FF1B7A303600A7E19F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 841386FE1B7A303600A7E19F /* AppDelegate.m */; };
 		841387021B7A303600A7E19F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841387011B7A303600A7E19F /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5AA4C6965083221E202B729F /* Pods-SpeedTest-ObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeedTest-ObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeedTest-ObjC/Pods-SpeedTest-ObjC.release.xcconfig"; sourceTree = "<group>"; };
+		5DA9A30AD8A9F80433999EFE /* Pods-SpeedTest-ObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeedTest-ObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeedTest-ObjC/Pods-SpeedTest-ObjC.debug.xcconfig"; sourceTree = "<group>"; };
 		841386F61B7A303600A7E19F /* SpeedTest-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpeedTest-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		841386FA1B7A303600A7E19F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841386FB1B7A303600A7E19F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		8413870F1B7A303600A7E19F /* SpeedTest-ObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpeedTest-ObjCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		841387141B7A303600A7E19F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841387151B7A303600A7E19F /* SpeedTest_ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedTest_ObjCTests.m; sourceTree = "<group>"; };
+		95C08046C13843C66263F55E /* libPods-SpeedTest-ObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpeedTest-ObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F521C0483E6AD15B443A062 /* libPods-SpeedTest-ObjC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				841386F81B7A303600A7E19F /* SpeedTest-ObjC */,
 				841387121B7A303600A7E19F /* SpeedTest-ObjCTests */,
 				841386F71B7A303600A7E19F /* Products */,
+				C002F7362CD6AF8896DA1842 /* Pods */,
+				9B1CCBC970EC0C6A80DB9B0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +126,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9B1CCBC970EC0C6A80DB9B0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95C08046C13843C66263F55E /* libPods-SpeedTest-ObjC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C002F7362CD6AF8896DA1842 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DA9A30AD8A9F80433999EFE /* Pods-SpeedTest-ObjC.debug.xcconfig */,
+				5AA4C6965083221E202B729F /* Pods-SpeedTest-ObjC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 841387191B7A303600A7E19F /* Build configuration list for PBXNativeTarget "SpeedTest-ObjC" */;
 			buildPhases = (
+				C87A47CD5B50084F4416CFC6 /* Check Pods Manifest.lock */,
 				841386F21B7A303600A7E19F /* Sources */,
 				841386F31B7A303600A7E19F /* Frameworks */,
 				841386F41B7A303600A7E19F /* Resources */,
+				7FADCAEA87AA88864C25C132 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FADCAEA87AA88864C25C132 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeedTest-ObjC/Pods-SpeedTest-ObjC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C87A47CD5B50084F4416CFC6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		841386F21B7A303600A7E19F /* Sources */ = {
@@ -347,6 +406,7 @@
 		};
 		8413871A1B7A303600A7E19F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA9A30AD8A9F80433999EFE /* Pods-SpeedTest-ObjC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "SpeedTest-ObjC/Info.plist";
@@ -357,6 +417,7 @@
 		};
 		8413871B1B7A303600A7E19F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AA4C6965083221E202B729F /* Pods-SpeedTest-ObjC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "SpeedTest-ObjC/Info.plist";
@@ -418,6 +479,7 @@
 				8413871B1B7A303600A7E19F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8413871C1B7A303600A7E19F /* Build configuration list for PBXNativeTarget "SpeedTest-ObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +488,7 @@
 				8413871E1B7A303600A7E19F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
