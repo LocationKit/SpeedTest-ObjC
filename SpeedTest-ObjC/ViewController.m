@@ -28,9 +28,13 @@
 }
 
 - (void)locationKit:(LocationKit *)locationKit didUpdateLocation:(CLLocation *)location {
-    if (location.speed > 0) {
+    if (location.speed > 1) {
         double speed = location.speed * 2.236936;
         self.speedDisplay.text = [NSString stringWithFormat:@"%.2f MPH", speed];
+    } else if (location.speed >= 0 && location.speed < 1) {
+      self.speedDisplay.text = @"Stopped";
+    } else {
+      self.speedDisplay.text = @"Unknown";
     }
 }
 
