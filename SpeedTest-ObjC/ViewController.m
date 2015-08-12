@@ -41,7 +41,7 @@
 - (void)locationKit:(LocationKit *)locationKit willChangeActivityMode:(LKActivityMode)mode {
     // LocationKit has engaged driving mode, we want to crank up the GPS to high from its default (low)
     LKSetting* setting;
-    if (mode == 5) {
+    if (mode == LKActivityModeAutomotive) {
         NSLog(@"Detected user likely driving, changing operation mode to high");
         setting = [[LKSetting alloc] initWithType:LKSettingTypeHigh];
     } else {
