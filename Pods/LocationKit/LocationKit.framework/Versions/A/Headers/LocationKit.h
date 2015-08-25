@@ -9,6 +9,7 @@
 #import "LKVisit.h"
 #import "LKSearchRequest.h"
 #import "LKSetting.h"
+#import "LKFilter.h"
 
 UIKIT_EXTERN NSString *const LKUserValueIdentifier;
 UIKIT_EXTERN NSString *const LKUserValueName;
@@ -24,6 +25,8 @@ UIKIT_EXTERN NSString *const LKUserValueDateInstalled;
 UIKIT_EXTERN NSString *const LKOptionWhenInUseOnly;
 UIKIT_EXTERN NSString *const LKOptionUseiOSMotionActivity;
 UIKIT_EXTERN NSString *const LKOptionTimedUpdatesInterval;
+UIKIT_EXTERN NSString *const LKOptionFilter;
+
 
 
 typedef NS_OPTIONS(NSUInteger, LKActivityMode) {
@@ -47,10 +50,6 @@ typedef NS_OPTIONS(NSUInteger, LKActivityMode) {
 
 @property(nonatomic, copy) void (^getCurrentLocationCallback)(CLLocation *, NSError *);
 
-
-@property(nonatomic) BOOL onlyInForeground;
-
-@property(nonatomic) BOOL useIOSMotionActivity;
 
 + (LocationKit *)sharedInstance;
 

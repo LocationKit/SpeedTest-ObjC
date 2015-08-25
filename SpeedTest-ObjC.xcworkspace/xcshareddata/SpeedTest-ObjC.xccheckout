@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6E6D9DA9-DE44-4CF2-81EC-E14CDDD006DD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SpeedTest-ObjC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B8FA2B08DC650CFBF6F7275FFAF2A51DA305CA45</key>
+		<string>github.com:socialradar/SpeedTest-ObjC</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SpeedTest-ObjC.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B8FA2B08DC650CFBF6F7275FFAF2A51DA305CA45</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:socialradar/SpeedTest-ObjC</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B8FA2B08DC650CFBF6F7275FFAF2A51DA305CA45</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B8FA2B08DC650CFBF6F7275FFAF2A51DA305CA45</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SpeedTest-ObjC</string>
+		</dict>
+	</array>
+</dict>
+</plist>

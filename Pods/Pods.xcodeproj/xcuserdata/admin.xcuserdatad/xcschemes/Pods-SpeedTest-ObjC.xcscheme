@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D1331EAC8039F88A1C4C4951"
+               BlueprintIdentifier = "839C53A4770BFB43A575F562"
                BuildableName = "libPods-SpeedTest-ObjC.a"
                BlueprintName = "Pods-SpeedTest-ObjC"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeedTest-ObjC/ViewController.m"
-            timestampString = "461102134.33749"
+            timestampString = "461102412.72447"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "-locationKit:didUpdateLocation:"
             landmarkType = "5">
          </BreakpointContent>
