@@ -16,6 +16,7 @@ typedef NS_ENUM(NSUInteger, LKSettingType) {
 
 @property(nonatomic) CLLocationAccuracy desiredAccuracy;
 @property(nonatomic) double distanceFilter;
+@property(nonatomic, readonly) LKSettingType type;
 
 - (instancetype)initWithType:(LKSettingType)type;
 
