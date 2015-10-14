@@ -28,6 +28,7 @@
 }
 
 - (void)locationKit:(LocationKit *)locationKit didUpdateLocation:(CLLocation *)location {
+    NSLog(@"got a location (%f, %f)", location.coordinate.latitude, location.coordinate.longitude);
     if (location.speed > 1) {
         double speed = location.speed * 2.236936;
         self.speedDisplay.text = [NSString stringWithFormat:@"%.2f MPH", speed];
@@ -49,7 +50,7 @@
         NSLog(@"Detected user likely not driving, changing operation mode to auto");
         setting = [[LKSetting alloc] initWithType:LKSettingTypeAuto];
     }
-    [[LocationKit sharedInstance] applyOperationMode:(setting)];
+    [[LocationKit sharedInstance] setOperationMode:(setting)];
 }
 
 @end
